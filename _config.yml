@@ -62,8 +62,8 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: 1461d2d355fe357ba886                            #生成的clientID
-  clientSecret: 2f1d0ac44a9c5e140427e088e781027cd80985c3    #生成的clientSecret
+  clientID: 3ea39d1260b8ddeb67db                            #生成的clientID
+  clientSecret: 2cf69b43c09bd1c92f9ac113185066ac4520e857    #生成的clientSecret
   repo: lpanglers.github.io    #仓库名称
   owner: LPAnglers    #github用户名
   admin: LPAnglers
