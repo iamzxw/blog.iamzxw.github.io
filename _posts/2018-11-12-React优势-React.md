@@ -4,7 +4,7 @@ title:      React 的优势				# 标题
 subtitle:      #副标题
 date:       2018-12-27 				# 时间
 author:     liangping 						# 作者
-header-img: img/post-bg-js-version.jpg 	#这篇文章标题背景图片
+header-img: img/react.jpg 	#这篇文章标题背景图片
 catalog: true 						# 是否归档
 tags:								#标签
     - React
