@@ -5,9 +5,9 @@ header-img: img/post-bg-desk.jpg
 email: liangpingprivate@gmail.com
 description: "我要变强"
 keyword: "JavaScript,html,css,java,sql"
-url: "https://lpanglers.github.io"          # your host, for absolute URL
+url: "https://fourthbeam.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/lpanglers/lpanglers.github.io.git" # you code repository
+github_repo: "https://github.com/fourthbeam/fourthbeam.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
@@ -20,7 +20,7 @@ sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's us
 RSS: false
 weibo_username:     liangpingvv
 # zhihu_username:     qiubaiying
-github_username:    LPAnglers
+github_username:    FourthBeam
 # facebook_username:  baiying.qiu.7
 # jianshu_username:   e71990ada2fd
 twitter_username:   liangpingmede
@@ -64,9 +64,9 @@ gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: 3ea39d1260b8ddeb67db                            #生成的clientID
   clientSecret: 2cf69b43c09bd1c92f9ac113185066ac4520e857    #生成的clientSecret
-  repo: lpanglers.github.io    #仓库名称
-  owner: LPAnglers    #github用户名
-  admin: LPAnglers
+  repo: fourthbeam.github.io    #仓库名称
+  owner: FourthBeam    #github用户名
+  admin: FourthBeam
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
