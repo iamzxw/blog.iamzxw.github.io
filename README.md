@@ -1,6 +1,6 @@
 # 这是我的个人博客
 
-**[查看博客](https://lpanglers.github.io)**
+**[查看博客](https://FourthBeam.github.io)**
 
 # Fork
 **[查看出处](https://github.com/qiubaiying/qiubaiying.github.io)**
