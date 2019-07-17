@@ -4,7 +4,7 @@ SEOTitle: 朱新威的博客 | Zhu Xinwei
 header-img: img/post-bg-desk.jpg
 email: zxw@iamzxw.com
 description: "我要变强"
-keyword: "JavaScript,html,css,java,sql"
+keyword: "机器学习,K-means聚类,对抗样本,零样本学习,深度学习,图像分类,语义分割"
 url: "https://blog.iamzxw.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/iamzxw/blog.iamzxw.github.io.git" # you code repository
@@ -18,12 +18,12 @@ sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's us
 
 # SNS settings
 RSS: false
-weibo_username:     liangpingvv
-# zhihu_username:     qiubaiying
+weibo_username:     朱大胆_DaDaDa
+zhihu_username:     iamzxw
 github_username:    iamzxw
 # facebook_username:  baiying.qiu.7
-# jianshu_username:   e71990ada2fd
-twitter_username:   FourthBeam
+jianshu_username:   a1264f0204a9
+twitter_username:   JooXinwei
 
 
 
