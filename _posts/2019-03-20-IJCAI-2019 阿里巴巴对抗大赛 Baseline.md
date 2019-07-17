@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      IJCAI-2019 阿里巴巴人工智能对抗算法竞赛 | Baseline
+title:      IJCAI-2019 阿里巴巴人工智能对抗算法竞赛 / Baseline
 subtitle:   MI_FGSM + Ensemble + Training DenseNet from scratch  #副标题
 date:       2019-3-20 				# 时间
 author:     zhu.xinwei 		    	# 作者
