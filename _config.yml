@@ -1,5 +1,5 @@
 # Site settings
-title: Zhu Xinwei
+title: Machine Learning
 SEOTitle: 朱新威的博客 | Zhu Xinwei
 header-img: img/post-bg-desk.jpg
 email: zxw@iamzxw.com
@@ -11,7 +11,7 @@ github_repo: "https://github.com/iamzxw/blog.iamzxw.github.io.git" # you code re
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "千里之行,始于足下"
+sidebar-about-description: "Ideologist & Architect & Musician & Zealot & X-men & Writer ... all of above, is not me!! i am zxw, a developer, welcome to my coding life."
 sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -31,7 +31,7 @@ twitter_username:   FourthBeam
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 permalink: pretty
-paginate: 10
+paginate: 30
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
@@ -60,14 +60,14 @@ kramdown:
 # disqus_username: qiubaiying
 
 # Gitalk
-gitalk:
-  enable: true    #是否开启Gitalk评论
-  clientID: 3ea39d1260b8ddeb67db                            #生成的clientID
-  clientSecret: 2cf69b43c09bd1c92f9ac113185066ac4520e857    #生成的clientSecret
-  repo: fourthbeam.github.io    #仓库名称
-  owner: FourthBeam    #github用户名
-  admin: FourthBeam
-  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+# gitalk:
+#  enable: true    #是否开启Gitalk评论
+#  clientID: 3ea39d1260b8ddeb67db                            #生成的clientID
+#  clientSecret: 2cf69b43c09bd1c92f9ac113185066ac4520e857    #生成的clientSecret
+#  repo: fourthbeam.github.io    #仓库名称
+#  owner: FourthBeam    #github用户名
+#  admin: FourthBeam
+#  distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
 # 统计
@@ -77,8 +77,8 @@ gitalk:
 # ba_track_id: b50bf2b12b5338a1845e33832976fd68
 
 # Google Analytics
-ga_track_id: 'UA-131554464-1'            # Format: UA-xxxxxx-xx
-ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+# ga_track_id: 'UA-131554464-1'            # Format: UA-xxxxxx-xx
+# ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
 
