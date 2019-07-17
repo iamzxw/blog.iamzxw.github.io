@@ -12,8 +12,6 @@ tags:								#标签
     - 
 ---
 
-## IJCAI-19 阿里巴巴人工智能对抗算法竞赛
-
 先来看一下使用本篇文章的Baseline可以达到的线上测评分数(online score)，与官方Baseline做个对比
 
 
@@ -33,7 +31,7 @@ ___
 ## 科普一秒钟
 2013年，Christian Szegedy等人在一篇名为[Intriguing properties of neural networks](https://arxiv.org/abs/1312.6199)的论文中首次提出**对抗样本**(Adversarial examples)的概念。简单来说，对抗样本就是在一张**正常图片**(Benign Image)上刻意加入一些人类不易察觉的**扰动**(Perturbation)，使得CNN分类器在对这个带有噪音图片(Perturbed image)进行分类时，出现非常离谱的错误。  
 
-![]()
+![](http://jupter-oss.oss-cn-hangzhou.aliyuncs.com/public/files/image/1095279296084/1553004263771_fs8ePrzfqg.jpg)
 
 作为攻击方Attacker，我们的目标是想办法找到这些对抗样本....     
 
@@ -43,7 +41,7 @@ ___
 
 
 ____
-## Defense Track
+## 防御赛道 | Defense Track
 
 | Defense Method | inception_v1 | resnet_v1_50 | vgg_16 |
 | --------- | --------- | --------- | --------- |
@@ -112,7 +110,7 @@ ____
 - pandas
 
 ### densenet.py：DenseNet
-
+```python
 import re
 import torch
 import torch.nn as nn
@@ -253,7 +251,7 @@ def densenet161(pretrained=False, **kwargs):
     model = DenseNet(num_init_features=96, growth_rate=48, block_config=(6, 12, 36, 24),
                      **kwargs)
     return model
-
+```
 
 
 
@@ -264,7 +262,7 @@ def densenet161(pretrained=False, **kwargs):
 首先删除两张损坏图片: `/00012/1e19e7fa7da1641e786b69dc8eed9daa.jpg`,`/00092/bdc7be7063d7e99953bbaee2cc99888c.jpg`。  
 
 然后运行下面代码，使用PIL.Image.convert('RGB')循环处理一下整个训练集，大概需要十几分钟。遍历过程会出现一些警告，不用理会，训练CNN模型时，使用处理过后的图片即可(保存在`IJCAI_2019_AAAC_train_processed`目录下)
-
+```python
 import os
 import glob
 import pandas as pd
@@ -310,12 +308,10 @@ if __name__ == '__main__':
 #     for batch_data in pbar(dataloader['train_data']):
 #         pass
     pass
-
-
-
+```
 
 ____
-## Non-targeted Attack Track
+## 无目标攻击赛道 | Non-targeted Attack Track
 
 ![](http://jupter-oss.oss-cn-hangzhou.aliyuncs.com/public/files/image/1095279296084/1553051754641_Fb8Qe8fo2g.jpg)
 
@@ -342,7 +338,7 @@ TSAIL提出的动量迭代FGSM(Momentum-Iterative FGSM)，既具有FGSM的可转
 
 
 ### non_target_mi_fgsm_attack.py
-
+```python
 import os
 import numpy as np
 import pandas as pd
@@ -523,10 +519,10 @@ if __name__=='__main__':
 #     output_dir = '/path/to/output'
 #     non_target_mi_fgsm_attack(input_dir, output_dir)
     pass
+```
 
 
-
-## Targeted Attack Track
+## 目标攻击赛道 | Targeted Attack Track
 
 与Non-targeted Attack不同的是，Targeted Attack基本没有什么可转移性。即，Targeted Attack生成的扰动图片只对被攻击的百盒模型有效，对黑盒模型几乎没有太大影响。 
 
@@ -544,7 +540,7 @@ TSAIL团队采用的策略是，针对常见的几个CNN模型进行百盒攻击
 
 
 ### target_mi_fgsm_attack.py
-
+```python
 import os
 import numpy as np
 import pandas as pd
@@ -726,3 +722,4 @@ if __name__ == '__main__':
 #     output_dir = '/path/to/output'
 #     target_mi_fgsm_attack(input_dir, output_dir)
     pass
+```
