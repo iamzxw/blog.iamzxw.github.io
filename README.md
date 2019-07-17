@@ -1,6 +1,6 @@
 # 这是我的个人博客
 
-**[查看博客](https://iamzxw.github.io)**
+**[查看博客](https://blog.iamzxw.com/)**
 
 # Fork
 **[查看出处](https://github.com/FourthBeam/FourthBeam.github.io)**
