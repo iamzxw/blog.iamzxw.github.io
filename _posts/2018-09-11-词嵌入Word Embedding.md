@@ -1,6 +1,6 @@
 ---
 layout:     post   				    # 使用的布局（不需要改）
-title:      机器学习 | 词嵌入 Word Embedding				# 标题 
+title:      机器学习 / 词嵌入 Word Embedding				# 标题 
 subtitle:      #副标题
 date:       2018-09-11 				# 时间
 author:     zhu.xinwei 		    	# 作者

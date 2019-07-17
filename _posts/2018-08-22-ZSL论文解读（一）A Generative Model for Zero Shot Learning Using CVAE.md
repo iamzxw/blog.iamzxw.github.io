@@ -1,6 +1,6 @@
 ---
 layout:     post   				    # 使用的布局（不需要改）
-title:      ZSL论文集解读 (一) | A Generative Model For Zero Shot Learning Using Conditional Variational Autoencoders
+title:      ZSL论文集解读 (一) / A Generative Model For Zero Shot Learning Using Conditional Variational Autoencoders
 subtitle:      #副标题
 date:       2018-08-22 				# 时间
 author:     zhu.xinwei 		    	# 作者
