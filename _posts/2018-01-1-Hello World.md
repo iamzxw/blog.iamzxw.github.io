@@ -1,6 +1,6 @@
 ---
 layout:     post   				    # 使用的布局（不需要改）
-title:      Hello World / 默然开始 寂静欢喜 # 标题 
+title:      Hello World / 纽约时间比加州时间早三个小时 # 标题 
 subtitle:      #副标题
 date:       2018-01-12 				# 时间
 author:     zhu.xinwei 		    	# 作者
@@ -104,4 +104,7 @@ You’re not EARLY.
 You are very much ON TIME, and in your TIME ZONE Destiny set up for you.
 
 
-诗/佚名
+*诗/佚名*
+
+
+*默然开始 寂静欢喜*
