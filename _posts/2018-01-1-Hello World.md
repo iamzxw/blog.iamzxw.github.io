@@ -11,39 +11,39 @@ tags:								#标签
 ---
 
 
-*纽约时间比加州时间早三个小时,*
+**纽约时间比加州时间早三个小时,**
 
 New York is 3 hours ahead of California,
 
-*但加州时间并没有变慢。*  
+**但加州时间并没有变慢。** 
 
 but it does not make California slow.
 
-*有人22岁就毕业了，*  
+**有人22岁就毕业了，**  
 
 Someone graduated at the age of 22,
 
-*但等了五年才找到好的工作！* 
+**但等了五年才找到好的工作！**
 
 but waited 5 years before securing a good job!
 
-*有人25岁就当上CEO，*
+**有人25岁就当上CEO，**
 
 Someone became a CEO at 25,
 
-*却在50岁去世。*  
+**却在50岁去世。**  
 
 and died at 50.
 
-*也有人迟到50岁才当上CEO，*  
+**也有人迟到50岁才当上CEO，**  
 
 While another became a CEO at 50,
 
-*然后活到90岁。* 
+**然后活到90岁。** 
 
 and lived to 90 years.
 
-有人依然单身，  
+**有人依然单身，**  
 
 Someone is still single,
 
