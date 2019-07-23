@@ -1,6 +1,6 @@
 ---
 layout:     post   				    # 使用的布局（不需要改）
-title:      对抗样本论文集解读 (三) / Transferable Adversarial Perturbations
+title:      对抗样本论文集解读 (二) / Transferable Adversarial Perturbations
 
 subtitle:      #副标题
 date:       2019-03-28 				# 时间

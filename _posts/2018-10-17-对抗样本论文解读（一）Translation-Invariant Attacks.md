@@ -1,6 +1,6 @@
 ---
 layout:     post   				    # 使用的布局（不需要改）
-title:      对抗样本论文集解读 (一) / Evading Defenses to Transferable Adversarial Examples by Translation-Invariant Attacks
+title:      对抗样本论文集解读 (三) / Evading Defenses to Transferable Adversarial Examples by Translation-Invariant Attacks
 
 subtitle:   CVPR 2019 Oral   #副标题
 date:       2019-04-22 				# 时间

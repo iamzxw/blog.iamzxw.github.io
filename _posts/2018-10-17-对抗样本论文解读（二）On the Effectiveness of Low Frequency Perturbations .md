@@ -1,6 +1,6 @@
 ---
 layout:     post   				    # 使用的布局（不需要改）
-title:      对抗样本论文集解读 (二) / On the Effectiveness of Low Frequency Perturbations
+title:      对抗样本论文集解读 (一) / On the Effectiveness of Low Frequency Perturbations
 
 subtitle:      #副标题
 date:       2019-03-22 				# 时间
