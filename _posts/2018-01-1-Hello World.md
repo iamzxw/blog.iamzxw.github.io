@@ -23,9 +23,9 @@ but it does not make California slow.
 
 Someone graduated at the age of 22,
 
-**但等了五年才找到好的工作！**
+**但等了五年才找到好的工作。**
 
-but waited 5 years before securing a good job!
+but waited 5 years before securing a good job.
 
 **有人25岁就当上CEO，**
 
@@ -63,7 +63,7 @@ but Trump starts at 70.
 
 Absolutely everyone in this world works based on their Time Zone.
 
-**身边有.些人看似走在你前面，**  
+**身边有些人看似走在你前面，**  
 
 People around you might seem to go ahead of you,
 
@@ -79,9 +79,9 @@ But everyone is running their own RACE, in their own TIME.
 
 Don’t envy them or mock them.
 
-**他们都在自己的时区里，你也是！**  
+**他们都在自己的时区里，你也是。**  
 
-They are in their TIME ZONE, and you are in yours!
+They are in their TIME ZONE, and you are in yours.
 
 **生命就是等待正确的行动时机。**  
 
