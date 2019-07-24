@@ -1,7 +1,7 @@
 ---
 layout:     post   				    # 使用的布局（不需要改）
 title:      Hello World / 纽约时间比加州时间早三个小时 # 标题 
-subtitle:      #副标题
+subtitle:   You’re not LATE. You’re not EARLY.   #副标题
 date:       2018-01-12 				# 时间
 author:     zhu.xinwei 		    	# 作者
 header-img: img/post-bg-desk.jpg 	#这篇文章标题背景图片

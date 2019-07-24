@@ -1,6 +1,6 @@
 ---
 layout:     post   				    # 使用的布局（不需要改）
-title:      ZSL论文集解读 (二) / Zero-shot Recognition via Semantic Embeddings and Knowledge Graphs
+title:      ZSL论文集解读 (四) / Zero-shot Recognition via Semantic Embeddings and Knowledge Graphs
 subtitle:      #副标题
 date:       2018-08-22 				# 时间
 author:     zhu.xinwei 		    	# 作者

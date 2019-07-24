@@ -1,6 +1,6 @@
 ---
 layout:     post   				    # 使用的布局（不需要改）
-title:      ZSL论文集解读 (四) / Learning a Deep Embedding Model for Zero-Shot Learning Embedding
+title:      ZSL论文集解读 (二) / Learning a Deep Embedding Model for Zero-Shot Learning Embedding
 subtitle:      #副标题
 date:       2018-09-26 				# 时间
 author:     zhu.xinwei 		    	# 作者
