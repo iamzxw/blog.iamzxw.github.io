@@ -1,7 +1,7 @@
 ---
 layout:     post   				    # 使用的布局（不需要改）
-title:      ZSL论文集解读 (三) / A Generative Model For Zero Shot Learning Using Conditional Variational Autoencoders
-subtitle:      #副标题
+title:      ZSL论文集阅读笔记 (三) / A Generative Model For Zero Shot Learning Using Conditional Variational Autoencoders
+subtitle:   CVPR 2018
 date:       2018-08-22 				# 时间
 author:     zhu.xinwei 		    	# 作者
 header-img: img/post-bg-desk.jpg 	#这篇文章标题背景图片
@@ -13,11 +13,24 @@ tags:								#标签
 ---
 
 
+
+[Paper](http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w42/Mishra_A_Generative_Model_CVPR_2018_paper.pdf)
+
+
+[Github](https://github.com/ShivaKrishnaM/ZeroShot_CVAE)
+
+
+
+解决零样本识别问题的传统做法是在语义空间和视觉空间学习一个映射关系，实现知识迁移。而本篇文章借助变分自编码，根据给定类别的语义信息，直接生成未见类别的特征样本。
+> While previous approaches have tried to model the relationship between the class attribute space and the image space via some kind of a transfer function in order to model the image space correspondingly to an unseen class, we take a different approach and try to generate the samples from the given attributes, using a conditional variational autoencoder, and use the generated samples for classification of the unseen classes.
+
+
+
 研究背景
 
 近几年，深度学习(Deep Learning)的火热主要归功于监督学习(Supervised Learning)的成功。在拥有大量标记数据和高性能计算平台(GPU)的情况下，监督学习在某些任务中可以达到(甚至超过)人类水平。如，借助Imagenet上的大量标记图片，各种CNN模型可以在图片分类任务中超过人类水平。
 
-然而，在实际应用中，人工标记大量数据会有许多局限，如，人工成本，数据收集等问题。与人类能够识别的3万多种类别相比，Imagenet上具有大量标记图片的类别也只不过有几千种而已(其他两万多物体类别只有很少量的标记图片)。而且，与人类的学习能力相比，机器(如，CNN模型)显得有点太笨了~。你需要进行千万次级别的训练(一边又一遍的告诉它，这个是猫，那个是狗，还要举大量栗子，囧)，才能得到一个分类器。
+然而，在实际应用中，人工标记大量数据会有许多局限，如，人工成本，数据收集等问题。与人类能够识别的3万多种类别相比，Imagenet上具有大量标记图片的类别也只不过有几千种而已(其他两万多物体类别只有很少量的标记图片)。而且，与人类的学习能力相比，机器(如，CNN模型)显得有点太笨了。你需要进行千万次级别的训练(一边又一遍的告诉它，这个是猫，那个是狗，还要举大量栗子，囧)，才能得到一个分类器。
 
 所以，近两年，机器学习社区将研究重点转向了非监督学习(Unsupervised Learning)和半监督学习(Semi-supervised Learning) —— 在只有少量标记数据，甚至没有标记数据的情况下，如何训练一个有效的模型。
 
@@ -27,11 +40,11 @@ tags:								#标签
 
 我们现在只需了解到，在生成模型领域，又分出好几类方法，如，生成对抗网络(Generative Adversarial Networks)，变分自编码器(Variational Auto-Encoder),  受限玻尔兹曼机(Restricted Boltzmann Machine)，自回归模型（Autoregressive models），常规流模型(Normalizing Flow-based Model)。本篇文章解读的论文使用是变分自编码器(VAE)。
 
-另外多说一句，生成模型派系研究人员有一个终极目标：使用真实世界中的大量数据(图片，文本，语音，视频等等)训练一个生成模型，使得模型能够理解真实世界的数据分布，并能根据模型自己的'理解'生成对应的数据。进而使机器能够理解真实世界~，人类将会进入全新的AI时代。(既然是终极目标，那就应该是不可能实现的目标！！)
+另外多说一句，生成模型派系研究人员有一个终极目标：使用真实世界中的大量数据(图片，文本，语音，视频等等)训练一个生成模型，使得模型能够理解真实世界的数据分布，并能根据模型自己的'理解'生成对应的数据。进而使机器能够理解真实世界，人类将会进入全新的AI时代。(既然是终极目标，那就应该是不可能实现的目标！！)
 
 不过，现阶段，生成模型在许多短期应用( Short term Applications )中取得了非常好的效果。如，图像、视频的去燥(Denoising)、修复(Inpainting)，超分辨率成像(Super-resolution imaging)等。当然，我们今天要讲的零样本学习(Zero Shot Learning)也是其中之一。 
 
-零样本图片分类(Zero Shot Image Recognition)是零样本学习(ZSL)的一个子领域。现阶段的ZSL研究几乎都焦距在图片分类任务上，所以可以将ZSL等同于ZSR(无奈~)。 简单来说，ZSL问题就是，在给定已知类别的训练集上，训练一个模型，使得模型不仅能够识别训练集中出现的类别(seen class)，而且还能识别一些训练集中未出现的类别(unseen class)。后期我们在专门的ZSL科普文章中再深入探讨。
+零样本图片分类(Zero Shot Image Recognition)是零样本学习(ZSL)的一个子领域。现阶段的ZSL研究几乎都焦距在图片分类任务上，所以可以将ZSL等同于ZSR(无奈)。 简单来说，ZSL问题就是，在给定已知类别的训练集上，训练一个模型，使得模型不仅能够识别训练集中出现的类别(seen class)，而且还能识别一些训练集中未出现的类别(unseen class)。后期我们在专门的ZSL科普文章中再深入探讨。
 
 ## 引言
 2013年，Diederik P Kingma等人在一篇名为Auto-Encoding Variational Bayes的论文中首次提出变分自编码器(Variational Auto-Encoder)模型。作为一类重要的无监督生成模型(Unsupervised Generative Model)，变分自编码器VAE在图像生成领域有着出色的性能。与自编码器(Auto-Encoder)不同之处在于，VAE在编码过程中增加了一些限制，迫使其生成的隐含向量(latent vector)粗略地遵循标准正态分布。这样我们只需给解码器一个服从标准正态分布的随机隐含向量，就能够得到对应的生成数据。
