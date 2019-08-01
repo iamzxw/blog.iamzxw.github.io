@@ -19,7 +19,9 @@ tags:								#标签
 
 ### TF-IDF向量
 
+Word Embedding, ELMo, Transformer, Attention, Bert
 
+近年来，研究人员通过文本上下文信息分析获得更好的词向量。ELMo是其中的翘楚，在多个任务、多个数据集上都有显著的提升。所以，它是目前最好用的词向量，the-state-of-the-art的方法。这篇文章发表在2018年的NAACL上，outstanding paper award。下面就简单介绍一下这个“神秘”的词向量模型。
 
 
 #### `基于统计的词嵌入方法`和`基于预测的词嵌入方法`（如Word2Vec）有什么区别，为什么深度学习中要使用后者

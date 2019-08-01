@@ -29,7 +29,6 @@ TI_ATTACK方法要求，生成的对抗样本x_adv, 不仅要使得J(x_adv, y)�
 
 作者采用平移变化的方法，因为他们可以一种有效的方法进行TI_attack，只需计算损失函数J（）对原始一张图片计算梯度，就可以完成攻击。
 
-
 Are adversarial examples have local ...?
 
 
