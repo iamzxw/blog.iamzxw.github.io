@@ -55,10 +55,10 @@ Inception-v4是对原来的版本进行了梳理，因为原始模型是采用�
         Inception_C()
     )
     # ...
-    # 收尾部分
+    # 收尾部分 并没有使用Dropout
     x = F.avg_pool2d(features, kernel_size=adaptiveAvgPoolWidth)
     x = x.view(x.size(0), -1)
-    x = self.last_linear(x)
+    x = self.last_linear(x) 
     # self.last_linear = nn.Linear(1536, num_classes)
 
 ```
