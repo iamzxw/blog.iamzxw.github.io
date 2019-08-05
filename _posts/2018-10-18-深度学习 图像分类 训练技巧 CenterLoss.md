@@ -59,6 +59,7 @@ class CenterLoss(torch.nn.Module):
         self.feat_dim = feat_dim
         self.use_gpu = use_gpu
 
+        # 为每个类维护一个原形,即中心向量
         if self.use_gpu:
             self.centers = torch.nn.Parameter(torch.randn(self.num_classes, self.feat_dim).cuda())
         else:
@@ -74,6 +75,9 @@ class CenterLoss(torch.nn.Module):
         # print(labels.shape)
 
         batch_size = x.size(0)
+        
+        # distmat就是计算每个特征x与标签对应的center向量的均方差 (x - center)^2
+
         # 对特征x每个值求平均，然后相加x1^2 + x2^2 + ....,编程（batch_size, 1）
         distmat = torch.pow(x, 2).sum(dim=1, keepdim=True).expand(batch_size, self.num_classes) + \
                   torch.pow(self.centers, 2).sum(dim=1, keepdim=True).expand(self.num_classes, batch_size).t()
@@ -81,10 +85,17 @@ class CenterLoss(torch.nn.Module):
         # distmat - 2x*centers [batch_size, feat]*[feat, num_classes]
         distmat.addmm_(1, -2, x, self.centers.t())
 
+        # [0,1,2,3,...,365]
         classes = torch.arange(self.num_classes).long()
         if self.use_gpu: classes = classes.cuda()
         
         labels = labels.unsqueeze(1).expand(batch_size, self.num_classes)
+        
+        # classes.expand(batch_size, self.num_classes)
+        # [0,1,2,3,...,365]
+        # [0,1,2,3,...,365]
+        # mask
+        # [batch_size, num_classes]
         mask = labels.eq(classes.expand(batch_size, self.num_classes))
 
         dist = distmat * mask.float()
